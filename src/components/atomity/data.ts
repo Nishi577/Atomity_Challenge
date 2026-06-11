@@ -112,8 +112,17 @@ function transform(products: Array<{ id: number; price: number; stock: number; r
   return providers;
 }
 
+// async function fetchProviders(): Promise<ProviderIntel[]> {
+//   const res = await fetch("https://dummyjson.com/products?limit=40&select=id,title,price,stock,rating");
+//   if (!res.ok) throw new Error("Failed to load infrastructure intelligence");
+//   const json = await res.json();
+//   return transform(json.products);
+// }
 async function fetchProviders(): Promise<ProviderIntel[]> {
-  const res = await fetch("https://dummyjson.com/products?limit=40&select=id,title,price,stock,rating");
+  // Add a timestamp to prevent caching
+  const bust = `_=${Date.now()}`;
+  const url = `https://dummyjson.com/products?limit=40&select=id,title,price,stock,rating&${bust}`;
+  const res = await fetch(url);
   if (!res.ok) throw new Error("Failed to load infrastructure intelligence");
   const json = await res.json();
   return transform(json.products);

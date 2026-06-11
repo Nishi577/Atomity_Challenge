@@ -59,7 +59,7 @@ export function MetricCard({
     <motion.div
       data-card-source={providerKey}
       data-card-id={cardId}
-      className="absolute left-1/2 top-1/2 z-20  md:block"
+      className="absolute left-1/2 top-1/2 z-20 hidden md:block"
       style={{ x, y, opacity: useMotionTemplate`calc(${opacity} * ${fade})`, scale }}
     >
       <motion.div
