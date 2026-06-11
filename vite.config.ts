@@ -8,9 +8,7 @@ export default defineConfig({
   plugins: [
     tailwindcss(),
     tsConfigPaths({ projects: ["./tsconfig.json"] }),
-    tanstackStart({
-      server: { entry: "server" }
-    }),
+    tanstackStart(),
     react(),
   ],
   resolve: {
