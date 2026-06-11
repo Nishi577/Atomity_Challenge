@@ -1,6 +1,5 @@
 import type { IntelCard } from "./data";
 
-/** Coloured dot indicating card health status. */
 export function StatusBadge({ status }: { status: IntelCard["status"] }) {
   const colorVar =
     status === "Healthy"

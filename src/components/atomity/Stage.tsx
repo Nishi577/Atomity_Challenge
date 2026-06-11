@@ -309,7 +309,7 @@ function ProviderNode({
         </div>
 
         {/* Mobile Isolated Structural Bounding Container */}
-        <div className="block md:hidden relative w-[clamp(88px,21vw,170px)] h-[clamp(88px,21vw,170px)]">
+        <div className="block md:hidden relative w-[clamp(88px,21vw,170px)] h-[clamp(88px,21vw,170px)]" aria-label="Provider intelligence grid" >
           <GlassGlobe
             provider={provider}
             isActive={isActive}
