@@ -1,0 +1,73 @@
+:root {
+  /* Background  */
+  --color-bg-primary: oklch(0.985 0.006 85);
+  --color-bg-secondary: oklch(0.94 0.012 85);
+  --color-bg-deep: oklch(0.94 0.012 85);
+
+  /* Text  */
+  --color-text-primary: oklch(0.22 0.015 70);
+  --color-text-secondary: oklch(0.45 0.02 70);
+
+  /* Accent colour set */
+  --color-accent-primary: oklch(0.58 0.16 55);
+  --color-accent-glow: oklch(0.72 0.18 60);
+  --color-accent-success: oklch(0.58 0.16 55);
+  --color-accent-error: oklch(0.58 0.22 25);
+  --color-accent-warning: oklch(0.78 0.12 65);
+
+  /* SVG gradient */
+  --color-tick-major: oklch(0.55 0.13 55);
+  --color-tick-minor: oklch(0.55 0.13 55 / 40%);
+  --color-packet: oklch(0.72 0.18 60);
+  --color-stroke-grad-0: oklch(0.58 0.16 55 / 5%);
+  --color-stroke-grad-50: oklch(0.58 0.16 55 / 45%);
+  --color-status-recoverable: oklch(0.78 0.12 65);
+  --color-status-optimizing: oklch(0.65 0.10 75);
+}
+
+/* Dark Theme */
+[data-theme="dark"],
+.dark {
+  --color-bg-primary: oklch(0.16 0.012 60);
+  --color-bg-secondary: oklch(0.20 0.014 65);
+  --color-bg-deep: oklch(0.11 0.01 60);
+
+  --color-text-primary: oklch(0.95 0.015 80);
+  --color-text-secondary: oklch(0.72 0.025 80);
+
+  --color-accent-primary: oklch(0.82 0.13 80);
+  --color-accent-glow: oklch(0.88 0.16 85);
+  --color-accent-success: oklch(0.82 0.13 80);
+  --color-accent-error: oklch(0.62 0.20 25);
+  --color-accent-warning: oklch(0.78 0.12 65);
+
+  --color-tick-major: oklch(0.82 0.13 80);
+  --color-tick-minor: oklch(0.82 0.13 80 / 35%);
+  --color-packet: oklch(0.90 0.16 85);
+  --color-stroke-grad-0: oklch(0.82 0.13 80 / 5%);
+  --color-stroke-grad-50: oklch(0.82 0.13 80 / 45%);
+  --color-status-recoverable: oklch(0.78 0.12 65);
+  --color-status-optimizing: oklch(0.70 0.08 75);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --color-bg-primary: oklch(0.16 0.012 60);
+    --color-bg-secondary: oklch(0.20 0.014 65);
+    --color-bg-deep: oklch(0.11 0.01 60);
+    --color-text-primary: oklch(0.95 0.015 80);
+    --color-text-secondary: oklch(0.72 0.025 80);
+    --color-accent-primary: oklch(0.82 0.13 80);
+    --color-accent-glow: oklch(0.88 0.16 85);
+    --color-accent-success: oklch(0.82 0.13 80);
+    --color-accent-error: oklch(0.62 0.20 25);
+    --color-accent-warning: oklch(0.78 0.12 65);
+    --color-tick-major: oklch(0.82 0.13 80);
+    --color-tick-minor: oklch(0.82 0.13 80 / 35%);
+    --color-packet: oklch(0.90 0.16 85);
+    --color-stroke-grad-0: oklch(0.82 0.13 80 / 5%);
+    --color-stroke-grad-50: oklch(0.82 0.13 80 / 45%);
+    --color-status-recoverable: oklch(0.78 0.12 65);
+    --color-status-optimizing: oklch(0.70 0.08 75);
+  }
+}
